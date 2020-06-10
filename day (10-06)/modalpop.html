@@ -1,0 +1,53 @@
+<html>
+<head>
+ <title> bootstrap nav fixed</title>
+<link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+<script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+<link rel="StyleSheet" href="jquery-ui-1.12.1/jquery-ui.min.css"/>
+<script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<style type="text/css">
+    $(document).ready(function(){
+        $("#id1").tabs();
+    });
+</style>
+    
+</head>
+<body>
+<div class="container-fluid" >
+    <button type="button" class="btn-btn-primary" data-toggle="modal" data-target="#myModal">open modal popup</button>    
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>header text</h3>
+
+
+                    </div>
+                    <div class="modal-body">
+                        modal pop up body
+                        <div id="id1">
+                            <ul>
+                                <li><a href="#signin">signin</a></li>
+                                <li><a href="#signup">signup</a></li>
+                            </ul>
+                            <div id="signin">
+                                <p>place content here</p>
+                            </div>
+                            <div id="signup">
+                                <p>place content here</p>
+                            </div>
+            
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn-btn-primary">sign in</button>
+                    <button type="button" class="btn-btn-primary">sign up</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+</div>
+  
+</body>
+
+</html>
